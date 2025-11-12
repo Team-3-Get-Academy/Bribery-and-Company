@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [NoctesPlugin()],
   base: "./",
   build: {
-    outDir: "../docs"
+    outDir: "./dist"
   }
 })
