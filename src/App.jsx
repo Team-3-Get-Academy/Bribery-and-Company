@@ -1,18 +1,17 @@
-import HelloWorld from './components/HelloWorld.jsx'
+import { RouterView } from 'noctes.jsx-router'
+import Navbar from './components/navbar.jsx'
 
 export default {
   render() {
     return (
       <>
-        <div>
-          <a href='https://vite.dev' target='_blank'>
-            <img src='/vite.svg' class='logo' alt='Vite logo' />
-          </a>
-          <a href='https://github.com/benjamin-larsen/Noctes.jsx' target='_blank'>
-            <img src='./assets/javascript.svg' class='logo vanilla' alt='JavaScript logo' />
-          </a>
+        <Navbar>
+          <slot name='header'>Test Header</slot>
+          <slot name='footer'>Test Footer</slot>
+        </Navbar>
+        <div class="pageContainer">
+          <RouterView></RouterView>
         </div>
-        <HelloWorld msg='Vite + Noctes.jsx' />
       </>
     )
   }
