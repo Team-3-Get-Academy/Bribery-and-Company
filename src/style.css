@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -67,6 +71,26 @@ h1 {
 .navBar > img {
   height: 40px;
 
+}
+
+/* .employees {
+  display: grid;
+  grid-template-columns: 1fr, 5fr;
+  grid-template-rows: 2fr, 1fr;
+  grid-template-areas: "pfp header"
+  "desc desc";
+
+} */
+.pfp {
+  height: 100px; width: 100px; object-fit: cover; border-radius: 50%; flex-shrink: 0;
+  grid-area: pfp
+}
+.header {
+  display: flex; flex-direction: column; justify-content: center; margin-left: 6px;
+  grid-area: header
+}
+.desc {
+  grid-area: desc
 }
 
 .logo {
