@@ -2,11 +2,11 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "vite",
   "git": {
-    "deploymentEnabled": true
+    "deploymentEnabled": false
   },
   "rewrites": [
     {
-      "source": "/*",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
