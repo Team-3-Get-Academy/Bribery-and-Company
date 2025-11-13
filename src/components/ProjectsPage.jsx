@@ -3,9 +3,10 @@ import { RouterLink } from "noctes.jsx-router"
 export default {
   render() {
     return <>
-    <div style="display: flex; flex-direction: column;">
-      <RouterLink to='/projects/vinlotteri'>Olga (Vin Lotteri)</RouterLink>
-      <RouterLink to='/projects/sandefjord'>Driftsmelding System (Sandefjord Frisbeeklub)</RouterLink>
+    <div class="projectLinks">
+      <h1>Prosjekter</h1>
+      <RouterLink class="link" to='/projects/vinlotteri'>Vinlotteri (Olga)</RouterLink>
+      <RouterLink class="link" to='/projects/sandefjord'>Driftsmelding System (Sandefjord Frisbeeklub)</RouterLink>
     </div>
     </>
   }

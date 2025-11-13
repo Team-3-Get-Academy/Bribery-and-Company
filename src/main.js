@@ -5,10 +5,12 @@ import router from 'noctes.jsx-router'
 import HomePage from './components/HomePage.jsx'
 import LoginPage from './components/LoginPage.jsx'
 import aboutUsPage from './components/AboutUs.jsx'
-import employeesPage from './components/Employees.jsx'
 import Vinlotteri from './components/Vinlotteri.jsx'
 import ProjectsPage from './components/ProjectsPage.jsx'
+import ContactPage from './components/Contact.jsx'
 import Sandefjord from './components/Sandefjord.jsx'
+import SandefjordReferat from './components/Sandefjord-Referat.jsx'
+import Page404 from './components/404.jsx'
 
 usePlugin(router, {
   routes: [
@@ -22,13 +24,7 @@ usePlugin(router, {
     },
     {
       path: "/aboutUs",
-      component: aboutUsPage,
-      children: [
-        {
-          path: "employees",
-          component: employeesPage
-        }
-      ]
+      component: aboutUsPage
     },
     {
       path: "/projects",
@@ -43,13 +39,26 @@ usePlugin(router, {
         },
         {
           path: "sandefjord",
-          component: Sandefjord
+          children: [
+            {
+              path: "",
+              component: Sandefjord
+            },
+            {
+              path: "referat",
+              component: SandefjordReferat
+            }
+          ]
         }
       ]
     },
     {
+      path: "contact",
+      component: ContactPage
+    },
+    {
       path: "*",
-      redirect: "/"
+      component: Page404
     }
   ]
 })

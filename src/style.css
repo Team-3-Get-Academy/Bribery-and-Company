@@ -40,6 +40,7 @@ h1 {
 #app {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .pageContainer {
@@ -55,16 +56,17 @@ h1 {
   gap: 8px;
 }
 
-.navBar > a {
+.navBar > a, .link {
   color: #29B6F6;
   font-weight: 600;
+  cursor: pointer;
 }
 
-.navBar > a:hover {
+.navBar > a:hover, .link:hover {
   color: #4FC3F7;
 }
 
-.navBar > a:hover:active {
+.navBar > a:hover:active, .link:hover:active {
   color: #B3E5FC
 }
 
@@ -86,8 +88,9 @@ h1 {
   grid-area: pfp
 }
 .header {
-  display: flex; flex-direction: column; justify-content: center; margin-left: 6px;
-  grid-area: header
+  display: flex; flex-direction: column; justify-content: center;
+  grid-area: header;
+  flex-grow: 1;
 }
 .desc {
   grid-area: desc
@@ -114,7 +117,7 @@ h1 {
   color: #888;
 }
 
-button {
+button, .button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -125,7 +128,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+button:hover, .button:hover {
   border-color: #646cff;
 }
 button:focus,
@@ -141,7 +144,17 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
+  button, .button {
     background-color: #f9f9f9;
   }
+}
+
+.projectLinks {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.projectLinks > a {
+  padding: 16px 12px;
 }

@@ -12,9 +12,11 @@ export default {
           <img src='/logo.png' />
           <RouterLink to='/'>Bribery & Co.</RouterLink>
           <span>|</span>
-          <RouterLink to='/aboutUs'>About Us</RouterLink>
-          <span>|</span>
           <RouterLink to='/projects'>Prosjekter</RouterLink>
+          <span>|</span>
+          <RouterLink to='/aboutUs'>Om oss</RouterLink>
+          <span>|</span>
+          <RouterLink to='/contact'>Kontakt oss</RouterLink>
         </div>
     </>
   }
