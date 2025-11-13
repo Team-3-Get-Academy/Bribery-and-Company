@@ -4,6 +4,10 @@ import AppRoot from './App.jsx'
 import router from 'noctes.jsx-router'
 import HomePage from './components/HomePage.jsx'
 import LoginPage from './components/LoginPage.jsx'
+import aboutUsPage from './components/AboutUs.jsx'
+import Vinlotteri from './components/Vinlotteri.jsx'
+import ProjectsPage from './components/ProjectsPage.jsx'
+import Sandefjord from './components/Sandefjord.jsx'
 
 usePlugin(router, {
   routes: [
@@ -14,6 +18,27 @@ usePlugin(router, {
     {
       path: "/login",
       component: LoginPage
+    },
+    {
+      path: "/aboutUs",
+      component: aboutUsPage
+    },
+    {
+      path: "/projects",
+      children: [
+        {
+          path: "",
+          component: ProjectsPage
+        },
+        {
+          path: "vinlotteri",
+          component: Vinlotteri
+        },
+        {
+          path: "sandefjord",
+          component: Sandefjord
+        }
+      ]
     },
     {
       path: "*",

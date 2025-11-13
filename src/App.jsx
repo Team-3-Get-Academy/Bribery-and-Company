@@ -5,10 +5,7 @@ export default {
   render() {
     return (
       <>
-        <Navbar>
-          <slot name='header'>Test Header</slot>
-          <slot name='footer'>Test Footer</slot>
-        </Navbar>
+        <Navbar>Bribery & Co.</Navbar>
         <div class="pageContainer">
           <RouterView></RouterView>
         </div>

@@ -43,6 +43,32 @@ h1 {
   overflow: auto;
 }
 
+.navBar {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: #283593;
+  gap: 8px;
+}
+
+.navBar > a {
+  color: #29B6F6;
+  font-weight: 600;
+}
+
+.navBar > a:hover {
+  color: #4FC3F7;
+}
+
+.navBar > a:hover:active {
+  color: #B3E5FC
+}
+
+.navBar > img {
+  height: 40px;
+
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

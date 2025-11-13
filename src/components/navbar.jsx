@@ -1,3 +1,5 @@
+import { RouterLink } from "noctes.jsx-router";
+
 export default {
   methods: {
     navigateLogin() {
@@ -7,10 +9,12 @@ export default {
   render(ctx, props, slots) {
     return <>
         <div class="navBar">
-            {slots.header?.()}
-            <div>{slots.default?.() || "No Text"}</div><div>NAVIGATION BAR</div>
-            <button onClick={ctx.methods.navigateLogin}>Go to login</button>
-            {slots.footer?.()}
+          <img src='/logo.png' />
+          <RouterLink to='/'>Bribery & Co.</RouterLink>
+          <span>|</span>
+          <RouterLink to='/aboutUs'>About Us</RouterLink>
+          <span>|</span>
+          <RouterLink to='/projects'>Prosjekter</RouterLink>
         </div>
     </>
   }

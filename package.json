@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev-ls": "vite --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -12,6 +13,6 @@
   },
   "dependencies": {
     "noctes.jsx": "github:benjamin-larsen/Noctes.jsx",
-    "noctes.jsx-router": "^1.0.0"
+    "noctes.jsx-router": "github:benjamin-larsen/noctes.jsx-router"
   }
 }

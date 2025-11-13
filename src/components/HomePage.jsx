@@ -8,6 +8,7 @@ export default {
           <h1>Welcome to Bribery & Co.!</h1>
           <h2>Lobbying for you.</h2>
         </div>
+        <div></div>
       </>
     )
   }
