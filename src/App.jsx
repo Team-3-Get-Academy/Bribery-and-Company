@@ -7,7 +7,9 @@ export default {
       <>
         <Navbar>Bribery & Co.</Navbar>
         <div class="pageContainer">
-          <RouterView></RouterView>
+          <Transition>
+            <RouterView></RouterView>
+          </Transition>
         </div>
       </>
     )

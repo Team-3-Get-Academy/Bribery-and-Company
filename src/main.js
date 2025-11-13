@@ -3,7 +3,6 @@ import './style.css'
 import AppRoot from './App.jsx'
 import router from 'noctes.jsx-router'
 import HomePage from './components/HomePage.jsx'
-import LoginPage from './components/LoginPage.jsx'
 import aboutUsPage from './components/AboutUs.jsx'
 import Vinlotteri from './components/Vinlotteri.jsx'
 import ProjectsPage from './components/ProjectsPage.jsx'
@@ -17,10 +16,6 @@ usePlugin(router, {
     {
       path: "/",
       component: HomePage
-    },
-    {
-      path: "/login",
-      component: LoginPage
     },
     {
       path: "/aboutUs",

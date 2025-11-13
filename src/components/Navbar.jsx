@@ -1,11 +1,6 @@
 import { RouterLink } from "noctes.jsx-router";
 
 export default {
-  methods: {
-    navigateLogin() {
-      this.$router.navigate("/login");
-    }
-  },
   render(ctx, props, slots) {
     return <>
         <div class="navBar">

@@ -14,8 +14,6 @@ export default {
         med en liten gjeng artige karer som har hode skrudd litt for hardt på hodet. <br />
         Vi har alle litt forskjelig unnskaps nivåer som gjør at dette kan bli litt spennende og at det skjer MYE artig<br />
         mens man holder på med oppgaver.  <br />
-      </div>
-      <div style="padding: 16px;">
         <h1>Vårt Team</h1>
         <div style="padding: 16px; display: flex; flex-direction: column; gap: 12px;">
           <EmployeeCard
