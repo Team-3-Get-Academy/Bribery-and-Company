@@ -167,19 +167,19 @@ button:focus-visible {
   padding: 16px 12px;
 }
 
-.presentation-enter-active, .presentation-leave-active {
+.presentation-enter-active, .presentation-leave-active, .presentation-back-enter-active, .presentation-back-leave-active {
   transition: transform 0.5s ease-out;
 }
 
-.presentation-leave-from, .presentation-enter-to {
+.presentation-leave-from, .presentation-enter-to, .presentation-back-leave-from, .presentation-back-enter-to {
   transform: translateX(0%);
 }
 
-.presentation-enter-from {
+.presentation-enter-from, .presentation-back-leave-to {
   transform: translateX(100%);
 }
 
-.presentation-leave-to {
+.presentation-leave-to, .presentation-back-enter-from {
   transform: translateX(-100%);
 }
 

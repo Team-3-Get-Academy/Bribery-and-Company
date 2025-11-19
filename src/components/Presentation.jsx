@@ -14,18 +14,21 @@ const slides = [
 export default {
   onCreated(ctx) {
     ctx.slide = ref(0);
+    ctx.back = ref(false);
   },
 
   methods: {
     next() {
       if (this.slide.value >= (slides.length - 1)) return;
 
+      this.back.value = false;
       this.slide.value += 1;
     },
 
     prev() {
       if (this.slide.value === 0) return;
 
+      this.back.value = true;
       this.slide.value -= 1;
     }
   },
@@ -39,7 +42,7 @@ export default {
         <h2 style="margin-top: 0; font-weight: 500; font-style: italic;">Bribery & Co.</h2>
         <span style="align-self: start; font-size: 20px">Bilde ${ctx.slide.value + 1}</span>
         <div style="width: 100%; height: 650px; background: #454545; border-radius: 16px; margin: 20px 0; position: relative; overflow: hidden;">
-          <Transition name="presentation">
+          <Transition name={ctx.back.value ? "presentation-back" : "presentation"}>
             {slideComponent ? <component is={slideComponent} /> : null}
           </Transition>
         </div>
