@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "noctes.jsx-vite-plugin": "github:benjamin-larsen/Noctes.jsx-Vite-plugin",
+    "noctes.jsx-vite-plugin": "github:benjamin-larsen/Noctes.jsx-Vite-plugin#v2",
     "vite": "^7.1.2"
   },
   "dependencies": {

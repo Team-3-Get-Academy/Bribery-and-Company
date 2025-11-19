@@ -4,7 +4,7 @@ import { RouterLink } from 'noctes.jsx-router'
 export default {
   render() {
     return (<>
-    <div style="height: 100%; width: 100%; display: flex; flex-direction: column; padding: 16px; overflow: auto; align-items: center;">
+    <div key="sandefjord-referat" style="height: 100%; width: 100%; display: flex; flex-direction: column; padding: 16px; overflow: auto; align-items: center;">
       <RouterLink class="button" style="align-self: start;" to='/projects/sandefjord'>Gå tilbake</RouterLink>
       <h2 style="margin-bottom: 0;">Kundereferat</h2>
       <h2 style="margin-top: 0;">Ansvarlig: <span style="font-weight: 500; font-size: 18px;">Jon Fredrik Strømberg, Alex Dahal og Benjamin Larsen</span></h2>

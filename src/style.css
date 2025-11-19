@@ -45,13 +45,15 @@ h1 {
 
 .pageContainer {
   flex-grow: 1;
-  overflow: auto;
   position: relative;
+  overflow: hidden;
 }
 
 .pageContainer > * {
   position: absolute;
   top: 0;
+  width: 100%;
+  overflow: auto;
 }
 
 .navBar {
@@ -165,26 +167,37 @@ button:focus-visible {
   padding: 16px 12px;
 }
 
-.transition-enter-from {
-  opacity: 0;
+.presentation-enter-active, .presentation-leave-active {
+  transition: transform 0.5s ease-out;
 }
 
-.transition-enter-active {
-  transition: opacity 0.5s;
+.presentation-leave-from, .presentation-enter-to {
+  transform: translateX(0%);
 }
 
-.transition-enter-to {
+.presentation-enter-from {
+  transform: translateX(100%);
+}
+
+.presentation-leave-to {
+  transform: translateX(-100%);
+}
+
+.transition-enter-active, .transition-leave-active {
+  transition: opacity 0.5s ease-out;
+}
+
+.transition-leave-from, .transition-enter-to {
   opacity: 1;
 }
 
-.transition-leave-from {
-  opacity: 1;
-}
-
-.transition-leave-active {
-  transition: opacity 0.5s;
-}
-
-.transition-leave-to {
+.transition-leave-to, .transition-enter-from {
   opacity: 0;
+}
+
+.presentationPage {
+  padding: 16px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

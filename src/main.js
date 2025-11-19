@@ -10,6 +10,7 @@ import ContactPage from './components/Contact.jsx'
 import Sandefjord from './components/Sandefjord.jsx'
 import SandefjordReferat from './components/Sandefjord-Referat.jsx'
 import Page404 from './components/404.jsx'
+import Presentation from './components/Presentation.jsx'
 
 usePlugin(router, {
   routes: [
@@ -50,6 +51,10 @@ usePlugin(router, {
     {
       path: "contact",
       component: ContactPage
+    },
+    {
+      path: "presentation",
+      component: Presentation
     },
     {
       path: "*",

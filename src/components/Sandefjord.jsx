@@ -23,7 +23,7 @@ const nCopy = {
 export default {
   render() {
     return <>
-    <div style="display: flex; flex-direction: column;padding: 16px;">
+    <div key="sandefjord" style="display: flex; flex-direction: column;padding: 16px;">
       <img src='/src/assets/sandefjord.png' style='max--width: 100%; align-self: center;' />
       <h1 style="margin-bottom: 0px; align-self: center;">Driftsmelding System</h1>
       <h2 style="margin-top: 0px; align-self: center;">Sandefjord Frisbeeklub</h2>

@@ -1,7 +1,7 @@
 export default {
   render() {
     return <>
-    <div>
+    <div key="contact">
       <h1>Kontakt Oss</h1>
       <p>Kontakt oss på <a class="link" href="mailto:support@bribery.no" target="_blank">support@bribery.no</a></p>
       <h2>Ansatt Kontakt</h2>

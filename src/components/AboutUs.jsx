@@ -3,7 +3,7 @@ import EmployeeCard from "./EmployeeCard.jsx"
 export default {
   render() {
     return <>
-      <div class="aboutUs" style="height: 100%; width: 100%; padding: 16px;">
+      <div key="aboutUs" class="aboutUs" style="height: 100%; width: 100%; padding: 16px;">
         <h1>Among Us</h1>
 
         <br />

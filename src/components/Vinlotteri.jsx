@@ -3,7 +3,7 @@ import './Vinlotteri.css'
 export default {
   render() {
     return (<>
-    <div style="height: 100%; width: 100%; display: flex; flex-direction: column; padding: 16px; overflow: auto;">
+    <div key="vinlotteri" style="height: 100%; width: 100%; display: flex; flex-direction: column; padding: 16px; overflow: auto;">
       <h1>Olga's Vinlotteri</h1>
       <p>Olga's Vinlotteri var vår første oppgave i Team 3. Det var i denne oppgaven hvor vi fant opp navnet <span style="font-weight: 600;">Bribery & Co.</span>.</p>
       <h2 style="align-self: center; margin-bottom: 0;">Kundereferat</h2>
