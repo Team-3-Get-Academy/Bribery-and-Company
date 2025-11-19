@@ -48,7 +48,7 @@ export default {
         </div>
         <div style="display: flex; width: 100%; justify-content: space-between">
           <button onClick={ctx.methods.prev} disabled={ctx.slide.value === 0}>Previous Slide</button>
-          <button onClick={ctx.methods.next} disabled={ctx.slide.value >= slides.length}>Next Slide</button>
+          <button onClick={ctx.methods.next} disabled={ctx.slide.value >= (slides.length - 1)}>Next Slide</button>
         </div>
       </div>
     </>
