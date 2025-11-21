@@ -54,6 +54,7 @@ h1 {
   top: 0;
   width: 100%;
   overflow: auto;
+  height: 100%;
 }
 
 .navBar {
